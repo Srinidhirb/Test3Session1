@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 void input(int *num1, int *den1, int *num2, int *den2)
 {
@@ -24,9 +25,9 @@ void output(int num1, int den1, int num2, int den2, int num3, int den3)
 }
 int main()
 {
- int a,b,c,d,num,den;
-  input(&a,&b,&c,&d);
-  add(a,b,c,d,&num,&den);
-  output(a,b,c,d,num,den);
+ int u,v,x,y,num,den;
+  input(&u,&v,&x,&y);
+  add(u,v,x,y,&num,&den);
+  output(u,v,x,y,num,den);
   return 0;
 }
