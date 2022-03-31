@@ -1,1 +1,51 @@
-
+Breakpoint 1, main () at p2original.c:42
+42    f1=input_fraction();
+(gdb) 
+(gdb) n
+enter fraction
+2 3 
+43    f2=input_fraction();
+(gdb) n
+enter fraction
+3 4
+44    f3=input_fraction();
+(gdb) s
+input_fraction () at p2original.c:8
+8   {
+(gdb) n
+10    printf("enter fraction\n");
+(gdb) n
+enter fraction
+11    scanf("%d %d",&f.num, &f.den);
+(gdb) n
+3 5 
+12    return f;
+(gdb) n
+13  }
+(gdb) n
+main () at p2original.c:45
+45    largest=largest_fraction(f1,f2,f3);
+(gdb) s
+largest_fraction (f1=..., f2=..., f3=...) at p2original.c:16
+16    int sden = f1.den * f2.den * f3.den;
+(gdb) n
+18    a = f1.num * sden/f1.den;
+(gdb) n
+19    b = f2.num * sden/f2.den;
+(gdb) n
+20    c = f3.num * sden/f3.den;
+(gdb) n
+21    if( a>b && a>c)
+(gdb) n
+25    else if(b>c)
+(gdb) n
+27      return f2;
+(gdb) n
+32  }
+(gdb) n
+main () at p2original.c:46
+46    output(f1,f2,f3,largest);
+(gdb) n
+47    return 0;
+(gdb) n
+48  }

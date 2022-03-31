@@ -1,1 +1,89 @@
-
+Breakpoint 1, main () at p1original.c:27
+27  {
+(gdb) n
+29    input(&u,&v,&x,&y);
+(gdb) s
+input (num1=0x7ffc8600ee50, den1=0x7ffc8600ee54, num2=0x7ffc8600ee58, 
+    den2=0x7ffc8600ee5c) at p1original.c:5
+5     printf("Enter the fraction number:");
+(gdb) n
+6     scanf("%d%d%d%d",num1,den1,num2,den2);
+(gdb) n
+Enter the fraction number: 2 3 4 5 
+7   }
+(gdb) n
+main () at p1original.c:30
+30    add(u,v,x,y,&num,&den);
+(gdb) s
+add (num1=2, den1=3, num2=4, den2=5, num3=0x7ffc8600ee60, den3=0x7ffc8600ee64)
+    at p1original.c:10
+10    *num3=(num1*den2)+(num2*den1);
+(gdb) n
+11    *den3=(den1*den2);
+(gdb) n
+13     for(i=2;i<=*den3;i++)
+(gdb) n
+15         if(*num3%i==0 && *den3==0)
+(gdb) n
+13     for(i=2;i<=*den3;i++)
+(gdb) n
+15         if(*num3%i==0 && *den3==0)
+(gdb) n
+13     for(i=2;i<=*den3;i++)
+(gdb) n
+15         if(*num3%i==0 && *den3==0)
+(gdb) n
+13     for(i=2;i<=*den3;i++)
+(gdb) n
+15         if(*num3%i==0 && *den3==0)
+(gdb) n
+13     for(i=2;i<=*den3;i++)
+(gdb) n
+15         if(*num3%i==0 && *den3==0)
+(gdb) n
+13     for(i=2;i<=*den3;i++)
+(gdb) n
+15         if(*num3%i==0 && *den3==0)
+(gdb) n
+13     for(i=2;i<=*den3;i++)
+(gdb) n
+15         if(*num3%i==0 && *den3==0)
+(gdb) n
+13     for(i=2;i<=*den3;i++)
+(gdb) n
+15         if(*num3%i==0 && *den3==0)
+(gdb) n
+13     for(i=2;i<=*den3;i++)
+(gdb) n
+15         if(*num3%i==0 && *den3==0)
+(gdb) n
+13     for(i=2;i<=*den3;i++)
+(gdb) n
+15         if(*num3%i==0 && *den3==0)
+(gdb) n
+13     for(i=2;i<=*den3;i++)
+(gdb) n
+15         if(*num3%i==0 && *den3==0)
+(gdb) n
+13     for(i=2;i<=*den3;i++)
+(gdb) n
+15         if(*num3%i==0 && *den3==0)
+(gdb) n
+13     for(i=2;i<=*den3;i++)
+(gdb) n
+15         if(*num3%i==0 && *den3==0)
+(gdb) n
+13     for(i=2;i<=*den3;i++)
+(gdb) n
+15         if(*num3%i==0 && *den3==0)
+(gdb) n
+13     for(i=2;i<=*den3;i++)
+(gdb) n
+21  }
+(gdb) n
+main () at p1original.c:31
+31    output(u,v,x,y,num,den);
+(gdb) n
+32    return 0;
+(gdb) n
+33  }

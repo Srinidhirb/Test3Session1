@@ -1,1 +1,31 @@
-
+Breakpoint 1, main () at p3original.c:27
+27    {
+(gdb) n
+29    input (&n,&r);
+(gdb) s
+input (n=0x7ffe23cb58fc, r=0x7ffe23cb5900) at p3original.c:4
+4   printf("enter the value of n and r:\n");
+(gdb) n
+enter the value of n and r:
+5   scanf("%d%d",n, r);
+(gdb) n
+4 2 
+6     }
+(gdb) n
+main () at p3original.c:30
+30    result=nCr(n,r);
+(gdb) s
+nCr (n=4, r=2) at p3original.c:18
+18      result= fact(n) / (fact(r) * fact(n - r)); 
+(gdb) n
+19      return result;
+(gdb) n
+20      }
+(gdb) n
+main () at p3original.c:31
+31    output(n,r,result);
+(gdb) n
+value of 4C2= 6
+32    return 0;
+(gdb) n
+33      }(gdb) 

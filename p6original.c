@@ -25,4 +25,3 @@ int main(){
     output(a,n);
     return 0;
 }
-LOHITH 
