@@ -4,6 +4,7 @@ struct _fraction
   int num,den;
 };
 typedef struct _fraction fraction;
+
 fraction input_fraction()
 {
   fraction f;

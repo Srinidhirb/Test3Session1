@@ -11,6 +11,7 @@ fraction input()
   return f;
 }
 fraction add(fraction f1,fraction f2)
+
 {
   fraction sum;
   int n1,n2,d1,d2;

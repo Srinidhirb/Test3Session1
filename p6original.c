@@ -12,6 +12,7 @@ int count_words(char a[]){
         temp=strtok(NULL," ");
     }
     printf("%d\n",i);
+  
     return i;
 }
 void output(char a[],int no_of_words){

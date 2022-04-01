@@ -7,6 +7,7 @@ int input_degree()
   return n;
 }
 float input_x()
+
 {
   float n;
   printf("enter the value of x\n");
