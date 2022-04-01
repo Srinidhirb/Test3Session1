@@ -1,1 +1,50 @@
-
+Breakpoint 1, main () at p6original.c:20
+20  int main(){
+(gdb) n
+23      input_string(a);
+(gdb) s
+input_string (a=0x7fff58daaea0 "") at p6original.c:4
+4       printf("Enter the sentence\n");
+(gdb) n
+Enter the sentence
+5       fgets(a,100,stdin);
+(gdb) n
+heloo world
+6   }
+(gdb) n
+main () at p6original.c:24
+24      n=count_words(a);
+(gdb) s
+count_words (a=0x7fff58daaea0 "heloo world\n") at p6original.c:8
+8       int i=0;
+(gdb) n
+9       char *temp=strtok(a," ");
+(gdb) n
+10      while(temp!=NULL){
+(gdb) n
+11          i=i+1;
+(gdb) n
+12          temp=strtok(NULL," ");
+(gdb) n
+10      while(temp!=NULL){
+(gdb) n
+11          i=i+1;
+(gdb) n
+12          temp=strtok(NULL," ");
+(gdb) n
+10      while(temp!=NULL){
+(gdb) n
+14      printf("%d\n",i);
+(gdb) n
+2
+15      return i;
+(gdb) n
+16  }
+(gdb) n
+main () at p6original.c:25
+25      output(a,n);
+(gdb) n
+26      return 0;
+(gdb) n
+27  }
+(gdb) 

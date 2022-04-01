@@ -1,1 +1,88 @@
+Breakpoint 1, main () at p4original.c:40
+40  {
+(gdb) n
+42    d=input_degree()+1;
+(gdb) s
+input_degree () at p4original.c:3
+3   {
+(gdb) n
+5     printf("enter the degree of the polynomial\n");
+(gdb) n
+enter the degree of the polynomial
+6     scanf("%d",&n);
+(gdb) n
+2
+7     return n;
+(gdb) n
+8   }
+(gdb) n
+main () at p4original.c:44
+44    x=input_x();
+(gdb) n
+enter the value of x
 
+
+
+2
+45    float a[d];
+(gdb) s
+46    input_coefficients(d,a);
+(gdb) s
+input_coefficients (n=3, a=0x7ffd5c1daaf0) at p4original.c:18
+18    for (int i=n;i>0;i--)
+(gdb) n
+20        printf("enter the coefficient %d\n",i);
+(gdb) n
+enter the coefficient 3
+21        scanf("%f",&a[i]);
+(gdb) n
+2
+18    for (int i=n;i>0;i--)
+(gdb) n
+20        printf("enter the coefficient %d\n",i);
+(gdb) n
+enter the coefficient 2
+21        scanf("%f",&a[i]);
+(gdb) n
+2
+18    for (int i=n;i>0;i--)
+(gdb) n
+20        printf("enter the coefficient %d\n",i);
+(gdb) n
+enter the coefficient 1
+21        scanf("%f",&a[i]);
+(gdb) n
+2
+18    for (int i=n;i>0;i--)
+(gdb) n
+23  }
+(gdb) n
+main () at p4original.c:47
+47    float c=evaluate_polynomial(d,a,x);
+(gdb) s
+evaluate_polynomial (n=3, a=0x7ffd5c1daaf0, x=2) at p4original.c:26
+26    float sum=0;
+(gdb) n
+27    for (int i=n;i>0;i--)
+(gdb) n
+29        sum=(sum+a[i])*x;
+(gdb) n
+27    for (int i=n;i>0;i--)
+(gdb) n
+29        sum=(sum+a[i])*x;
+(gdb) n
+27    for (int i=n;i>0;i--)
+(gdb) n
+29        sum=(sum+a[i])*x;
+(gdb) n
+27    for (int i=n;i>0;i--)
+(gdb) n
+31  }
+(gdb) n
+main () at p4original.c:48
+48    out_put(d,a,x,c);
+(gdb) n
+2*x^2+2*x^1+2 at 2.000000 is 28.000000
+49    return 0;
+(gdb) n
+50  }(gdb) C
